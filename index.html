@@ -129,7 +129,7 @@
         async function MovieRating(){
         var movie_name = document.getElementById("movie").value;
         try{
-        var responce = await fetch(`http://www.omdbapi.com/?t=${movie_name}&apikey=17249d03`);
+        var responce = await fetch(`HTTPS://www.omdbapi.com/?t=${movie_name}&apikey=17249d03`);
         var data = await responce.json();
         displayMovie(data)
         } catch(error){
