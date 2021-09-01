@@ -131,10 +131,9 @@
         try{
         var responce = await fetch(`http://www.omdbapi.com/?t=${movie_name}&apikey=17249d03`);
         var data = await responce.json();
-        console.log(data)
         displayMovie(data)
         } catch(error){
-            console.log("error", error)
+           
         }
     }
     MovieRating()
